@@ -1,38 +1,84 @@
-.App {
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+nav{
+  padding: 20px;
+  background-color: cornflowerblue;
+  color: white;
+  font-size: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  background-color: rgb(154, 208, 255);
+  border-radius: 30px;
+  width: 70%;
+  margin: auto;
+  margin-top:20px;
+  min-height: 80vh;
+  padding: 4vmax 8vmax;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container > form{
+display: flex;
+flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container > h1{
+  text-align: center;
+  margin: 30px;
+  font-size: 2.5rem;
+}
+input,textarea,button{
+  padding: 15px;
+  border: 1px solid rgba(0,0,0,0.214);
+  border-radius: 5px;
+  margin: 10px 0px;
+  font-size: 1.2rem;
+}
+
+button{
+  border:none ;
+  cursor: pointer;
+  background-color: rgb(37, 37, 37);
   color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.task{
+  /* border: 1px solid rgba(0,0,0,0.214); */
+  display: flex;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 5px;
+  /* margin: 20px 0px; */
+  margin: 20px ;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task > div{
+  width: 100%;
+
+}
+
+.task span{
+  color: rgba(0,0,0,0.673);
+}
+
+.task button{
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task button:hover{
+  background-color: red;
 }
